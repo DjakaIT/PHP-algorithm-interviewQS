@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  width: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+
+
+.tablica_Usluge {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #0510db; 
+  margin: 15px 0;
+
+}
+
+.tr_Usluge:first-child, 
+.tr_Usluge:last-child {  
+  background-color: #81BFED;
+}
+
+
+.th_Usluge,
+.td_Usluge {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #0510db;
+}
+
+.th_Usluge {
+  font-weight: bold;
+}
+
+.table_dinamika {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #0510db;
+  margin: 15px 0;
+ 
+}
+.tr_dinamika:first-child{  
+  background-color: #81BFED;
+}
+.th_dinamika,
+.td_dinamika {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #0510db;
+}
+
+.th_dinamika {
+  font-weight: bold;
+}
+
+
+#tr_prazan {
+  height: 1em;
+  background-color: white;
+}
+
+
+
+.h4_dinamika{
+  text-align: center;
+  
+}
+
+#multiskup_usluge{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .tablica_Usluge,
+  .table_dinamika {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .th_Usluge,
+  .td_Usluge,
+  .th_dinamika,
+  .td_dinamika {
+    white-space: nowrap; 
+  }
+
+  h1,
+  h4 {
+    font-size: 1.2em;
+  }
+
+  #multiskup_usluge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
